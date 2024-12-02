@@ -14,11 +14,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGE  S" /> -->
+
+    <!-- permission to using flutter tex -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <application
         android:requestLegacyExternalStorage="true"
         android:label="proofmaster"
         android:name="${applicationName}"
-        android:icon="@mipmap/launcher_icon">
+        android:icon="@mipmap/launcher_icon"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"
